@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Ghostwriter\Wip\Interface;
+namespace Ghostwriter\MezzioTestBench\Interface;
 
 interface FooInterface
 {
