@@ -1,11 +1,15 @@
 {
-    "name": "ghostwriter/wip",
-    "description": "Here be dragons",
+    "name": "ghostwriter/mezzio-testbench",
+    "description": "Provides a testing environment for Mezzio applications using PHPUnit",
     "license": "BSD-3-Clause",
     "type": "library",
     "keywords": [
         "ghostwriter",
-        "wip"
+        "mezzio-testbench",
+        "dev",
+        "mezzio",
+        "phpunit",
+        "tests"
     ],
     "authors": [
         {
@@ -15,14 +19,14 @@
             "role": "Developer"
         }
     ],
-    "homepage": "https://github.com/ghostwriter/wip",
+    "homepage": "https://github.com/ghostwriter/mezzio-testbench",
     "support": {
-        "issues": "https://github.com/ghostwriter/wip/issues",
-        "forum": "https://github.com/ghostwriter/wip/discussions",
-        "source": "https://github.com/ghostwriter/wip",
-        "docs": "https://github.com/ghostwriter/wip",
-        "rss": "https://github.com/ghostwriter/wip/releases.atom",
-        "security": "https://github.com/ghostwriter/wip/security/advisories/new"
+        "issues": "https://github.com/ghostwriter/mezzio-testbench/issues",
+        "forum": "https://github.com/ghostwriter/mezzio-testbench/discussions",
+        "source": "https://github.com/ghostwriter/mezzio-testbench",
+        "docs": "https://github.com/ghostwriter/mezzio-testbench",
+        "rss": "https://github.com/ghostwriter/mezzio-testbench/releases.atom",
+        "security": "https://github.com/ghostwriter/mezzio-testbench/security/advisories/new"
     },
     "funding": [
         {
@@ -52,22 +56,14 @@
     "prefer-stable": true,
     "autoload": {
         "psr-4": {
-            "Ghostwriter\\Wip\\": "src"
-        },
-        "files": [
-            "src/constants.php",
-            "src/functions.php"
-        ]
+            "Ghostwriter\\MezzioTestBench\\": "src"
+        }
     },
     "autoload-dev": {
         "psr-4": {
             "Tests\\": "tests"
         }
     },
-    "bin": [
-        "bin/console",
-        "bin/console.php"
-    ],
     "config": {
         "allow-plugins": {
             "ghostwriter/coding-standard": true
@@ -118,6 +114,7 @@
         "psalm:shepherd": "@psalm --no-diff --shepherd --stats",
         "psalm:update": "@psalm --no-diff --update-baseline=psalm-baseline.xml",
         "rector": "@bin_rector",
+        "rector:dry-run": "@rector --dry-run",
         "test": [
             "@phpunit",
             "@psalm:shepherd",
