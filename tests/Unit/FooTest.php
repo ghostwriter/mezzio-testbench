@@ -5,9 +5,9 @@ declare(strict_types=1);
 namespace Tests\Unit;
 
 use Generator;
-use Ghostwriter\Wip\Foo;
-use Ghostwriter\Wip\Interface\FooExceptionInterface;
-use Ghostwriter\Wip\Interface\FooInterface;
+use Ghostwriter\MezzioTestBench\Foo;
+use Ghostwriter\MezzioTestBench\Interface\FooExceptionInterface;
+use Ghostwriter\MezzioTestBench\Interface\FooInterface;
 use PHPUnit\Framework\Attributes\CoversClass;
 use PHPUnit\Framework\Attributes\DataProvider;
 use PHPUnit\Framework\TestCase;
